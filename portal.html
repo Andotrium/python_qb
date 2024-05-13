@@ -8,10 +8,29 @@
 </head>
 <body>
     <div id="main_div"> 
-        <h1>Enter you question</h1>
-    <div id="questions"></div>
-    <h1>Enter you Answers with options</h1>
-    <div id="answer"></div>
+        <form action="/newq" method="POST">
+            <label for="submittedBy">Your Name</label>
+            <input type="text" name="submittedBy">
+            <h1>Enter your question</h1>
+            <div id="questions">
+                <input type="text" name="ques">
+            </div>
+            <h1>Enter you Answers with options</h1>
+            <div id="answer">
+                <label for="op1">option 1</label>
+                <input type="text" name="op1">
+                <label for="op2">option 2</label>
+                <input type="text" name="op2">
+                <label for="op3">option 3</label>
+                <input type="text" name="op3">
+                <label for="op4">option 4</label>
+                <input type="text" name="op4">
+                <label for="correct">Correct option</label>
+                <input type="number" name="correct" max="4" min="1">
+                
+            </div>
+            <input type="submit">
+        </form>
     </div>
     
 </body>

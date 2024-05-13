@@ -4,7 +4,7 @@
     box-sizing: border-box;
     width : 100vw ;
     height: 100vh;
-    background-image: url("/resources/earth.jpg");
+    background-image: url("earth.jpg");
     background-size: cover;
     display : flex;
     flex-direction: column;
@@ -76,4 +76,21 @@
 }
 .option:hover{
     background-color: rgba(208, 208, 219, 0.57) ;
+}
+
+#score_card {
+    background-color: rgba(127, 255, 212, 0.534);
+    width: 90vw;
+    height: 90vh;
+    border:2px white solid;
+    align-items: center;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+#score_card h1{
+    color: black;
 }
