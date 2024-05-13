@@ -3,6 +3,8 @@ const app = express()
 const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 
+const db = require('./models/db.js')
+
 dotenv.config()
 mongoose.connect(process.env.database1_key)
 
