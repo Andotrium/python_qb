@@ -1,0 +1,75 @@
+#main_div {
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+    width : 100vw ;
+    height: 100vh;
+    background-image: url("/resources/earth.jpg");
+    background-size: cover;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+
+}
+
+#buttons{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+#buttons button{
+    background-color: rgba(13, 234, 237, 0.856);
+    border-radius: 5px;
+    border:2px white solid;
+
+}
+#questions {
+    background-color: rgba(127, 255, 212, 0.534);
+    padding: 10px;
+    border:2px white solid;
+    width: 90vw;
+    height: 10vw;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+#questions p{
+    color: white;
+    font-size: larger;
+    font-weight: 400;
+}
+#answer {
+    background-color: rgba(127, 255, 212, 0.534);
+    width: 90vw;
+    height: 30vw;
+    border:2px white solid;
+    align-items: center;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+.option {
+    background-color: white;
+    height: 20%;  
+    border: 1px black solid;
+    width: 80vw;
+    overflow-y: auto;
+    border-radius: 5px;
+
+     
+}
+.option:hover{
+    background-color: rgba(208, 208, 219, 0.57) ;
+}
