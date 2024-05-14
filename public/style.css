@@ -66,6 +66,7 @@
 }
 .option {
     background-color: white;
+    color: black;
     height: 20%;  
     border: 1px black solid;
     width: 80vw;
@@ -93,4 +94,20 @@
 }
 #score_card h1{
     color: black;
+}
+.red {
+    background-color: red;
+    color: white;
+}
+.red:hover{
+    background-color: red;
+    color: white;
+}
+.green {
+    background-color: rgb(28, 205, 28);
+    color: white;
+}
+.green:hover{
+    background-color: rgb(28, 205, 28);
+    color: white;
 }
