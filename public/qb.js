@@ -1,49 +1,7 @@
-let db = [{
-    "corr": 0,
-    "incorr": 0,
-    "__v": 0,
-    "_id": {
-      "$oid": "66428a3d01758d952d1a2502"
-    },
-    "ques": "The first question Pratham Andotra",
-    "op1": "option 1",
-    "op2": "option2",
-    "op3": "option 3",
-    "op4": "option 4",
-    "correct": 2,
-    "submittedBy": "Pratham"
-  },
-  {
-    "corr": 0,
-    "incorr": 0,
-    "__v": 0,
-    "_id": {
-      "$oid": "66428a3d01758d952d1a2502"
-    },
-    "ques": "The second question",
-    "op1": "option 1",
-    "op2": "option2",
-    "op3": "option 3",
-    "op4": "option 4",
-    "correct": 4,
-    "submittedBy": "Pratham"
-  },
-  {
-    "corr": 0,
-    "incorr": 0,
-    "__v": 0,
-    "_id": {
-      "$oid": "66428a3d01758d952d1a2502"
-    },
-    "ques": "The third question",
-    "op1": "option 1",
-    "op2": "option2",
-    "op3": "option 3",
-    "op4": "option 4",
-    "correct": 1,
-    "submittedBy": "Pratham"
-  }]
-  // console.log(db[0])
+database0 = database0.replace(/&#34;/g, '"');
+console.log(database0)
+let db = JSON.parse(database0)
+console.log(db)
 var len = db.length
 var visited_q = []
 

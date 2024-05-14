@@ -3,6 +3,7 @@ const app = express()
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const dotenv = require('dotenv')
+const ejs = require('ejs')
 
 const db = require('./models/db.js')
 
@@ -12,12 +13,20 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"))
 app.use(express.static("resources"))
 
+app.set('view engine', 'ejs')
+
 app.listen(6969)
 app.get('/', (req, res)=>{
-    res.sendFile(__dirname + '/portal.html')
+    res.render(__dirname + '/views/portal.ejs')
 })
-app.get('/q', (req, res)=>{
-    res.sendFile(__dirname + '/index.html')
+app.get('/q',async function (req, res) {
+    res.clearCookie('db')
+    const getDB = await db.find()
+    if (getDB){
+        res.render(__dirname+'/views/index.ejs', {
+            datab: JSON.stringify(getDB)
+        })
+    }
 })
 
 app.post('/newq', async function(req, res) {
